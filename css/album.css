@@ -1,0 +1,82 @@
+.album-wrapper{
+    margin: auto;
+    max-width: 800px;
+    padding: 10px;
+}
+.album-main{
+
+    margin: auto;
+    width: 80%;
+    position: relative;
+    justify-content: center;
+}
+.album{
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.album-item{
+    width: 100%;
+    flex: 1 0 100%;
+    display: none;
+
+}
+.album-item img{
+    width: 100%;
+    user-select: none;
+    border-radius: 20px;
+}
+.album-item .text{
+    position: absolute;
+    bottom: 8px;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: rgb(207,46,46);
+}
+.btn {
+    position: absolute;
+    z-index: 15;
+    width: 5%!important;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn img{
+    width: 100%;
+}
+#next{
+    right: 0;
+}
+#prev{
+    left: 0;
+}
+.menu-dot{
+    position: absolute;
+    z-index: 30;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+.bar-dot{
+    line-height: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    border-radius: 100%;
+    background-color: rgb(207,46,46);
+    transition: background-color 0.6s ease;
+}
+.active, dot:hover{
+    background-color:rgb(0,208,130);
+}

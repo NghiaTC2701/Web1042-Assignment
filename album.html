@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-menu">
+            <div class="menu">
+                <nav class="menu-nav">
+                    <ul>
+                        <li class="focuss"><a href="album.html">Album</a></li>
+                        <li><a href="register.html">Đăng kí</a></li>
+                        <li><a href="sell.html">Bán hàng</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="album-wrapper">
+            <div class="album-main">
+                <div class="album">
+                    <div class="album-item">
+                        <img src="images/mahouka-1.jpg" alt="">
+                        <div class="text">Ảnh 1/5</div>
+                    </div>
+                    <div class="album-item">
+                        <img src="images/mahouka-2.jpg" alt="">
+                        <div class="text">Ảnh 2/5</div>
+                    </div>
+                    <div class="album-item">
+                        <img src="images/mahouka-3.jpg" alt="">
+                        <div class="text">Ảnh 3/5</div>
+                    </div>
+                    <div class="album-item">
+                        <img src="images/mahouka-4.jpg" alt="">
+                        <div class="text">Ảnh 4/5</div>
+                    </div>
+                    <div class="album-item">
+                        <img src="images/mahouka-5.jpg" alt="">
+                        <div class="text">Ảnh 5/5</div>
+                    </div>
+                </div>
+                <div class="menu-dot">
+                    <div class="bar-dot">
+                        <span class="dot" onclick="dotSlide(1)"></span>
+                        <span class="dot" onclick="dotSlide(2)"></span>
+                        <span class="dot" onclick="dotSlide(3)"></span>
+                        <span class="dot" onclick="dotSlide(4)"></span>
+                        <span class="dot" onclick="dotSlide(5)"></span>
+                    </div>
+                </div>
+                <button type="button" id="next" class="btn" onclick="plusSlide(1)"><img src="images/icons8-chevron-right-100.png" alt="">
+                </button>
+                <button type="button" id="prev" class="btn" onclick="plusSlide(-1)"><img src="images/icons8-chevron-left-100.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><span> Trương Công Nghĩa - PD05529</span></div>
+    <script src="js/album.js"></script>
+</body>
+
+</html>

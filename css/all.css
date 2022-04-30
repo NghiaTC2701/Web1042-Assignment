@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+html{
+    background-image: url(../images/C__Data_Users_DefApps_AppData_INTERNETEXPLORER_Temp_Saved\ Images_OneDrive_20-_20251757_20aruken_20building_20city_20clouds_20grass_20nobody_20original_20scenic_20sunset_20tree.jpg);
+    background-repeat:repeat;
+    background-size: 100% 100%;
+}
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    background-color: #1a1a1a;
+}
+.menu{
+    display: block;
+}
+.menu-nav{
+    display:block;
+}
+.menu-nav ul{
+    display: block;
+    text-align: center;
+}
+.menu-nav ul li{
+    display: inline-block;
+    line-height: 20px;
+    padding: 10.3px 20px;
+}
+.menu-nav a{
+    color: #cf2e2e;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+}
+.menu-nav ul li:hover{
+    background-color: #000;
+}
+.menu-nav a:hover{
+    color: #00d084!important;
+    border-bottom: 2px solid #ff6900;
+}
+.focuss{
+    background-color: #0f0f0f;
+}
+.focuss>a{
+    border-bottom: 2px solid #ff6900;
+    color: #00d084!important
+}
+
+.container{
+    color: #000;
+    background-color: #abb8c3;
+    padding: 20px;
+    border-top: 2px solid #cf2e2e;
+    border-bottom: 2px solid #cf2e2e;
+}
+.album-wrapper{
+    padding: 10px;
+}
+.footer{
+    line-height: 50px;
+
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+.footer span{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #9b51e0 ;
+}
+.span-1{
+    color: rgba(6,147,227,1);
+}
+.span-2{
+    color: rgba(255,105,0,1);
+}

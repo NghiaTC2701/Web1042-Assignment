@@ -1,0 +1,82 @@
+.form-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    flex-wrap: wrap;
+}
+.form-input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.form-input input{
+ padding: 10px;
+ margin: 10px;
+ width: 50%;
+ outline: none;
+ color: #000;
+}
+.form-input input:focus{
+outline: none;
+border: 2px solid #00d084;
+}
+.form-text{
+    width: 100%;
+}
+.form-input h2{
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+.btn-form{
+    color: red;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btn-form:hover{
+    box-shadow: 0 0 5px #9b51e0;
+}
+.title,.table-sp{
+    width: 100%;
+    text-align: center;
+    border-color: #00d084;
+}
+.table-sp th,.table-sp td{
+    padding: 10px 10px;
+}
+.table-sp th{
+    background-color: #0693e3;
+    color: #fff;
+}
+.title select{
+    padding: 5px 10px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.title{
+    padding-bottom: 10px;
+}
+.title hr{
+    width: 100%;
+    margin: 5px 0;
+}
+#price-range{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+#tongTien{
+    color: red;
+}
+.tien{
+    color: #000;
+    font-weight: bolder;
+}
+input[type=number]{
+    padding: 2px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-menu">
+            <div class="menu">
+                <nav class="menu-nav">
+                    <ul>
+                        <li><a href="album.html">Album</a></li>
+                        <li class="focuss"><a href="register.html">Đăng kí</a></li>
+                        <li><a href="sell.html">Bán hàng</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="register-h2">
+            <h2><span class="span-1"> Đăng kí </span> <span class="span-2"> Thành Viên </span></h2>
+            <hr>
+        </div>
+        <div class="form-register">
+            <form id="form">
+                <div class="form-group">
+                    <legend>Mã sinh viên</legend>
+                    <input type="text" class="form-input" id="msv" onclick="removeID()">
+                    <span class="error" id="error-id"></span>
+                </div>
+                <div class="form-group">
+                    <legend>Họ và tên</legend>
+                    <input type="text" class="form-input" id="name" onclick="removeName()">
+                    <span class="error" id="error-name"></span>
+
+                </div>
+                <div class="form-group">
+                    <legend>Email</legend>
+                    <input type="text" class="form-input" id="email" onclick="removeEmail()">
+                    <span class="error" id="error-email"></span>
+
+                </div>
+                <div class="form-group">
+                    <legend>Giới tính</legend>
+                    <div class="nho" id="gender-nho">
+                        <input type="radio" name="gender" onclick="removeGender()"> Nam
+                        <input type="radio" name="gender" onclick="removeGender()"> Nữ
+                        <span class="error" id="error-gender"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <legend>Sở thích</legend>
+                    <div class="nho" id="hobby">
+                        <input type="checkbox" name="checkbox" onclick="removeHobbies()"><label>Đọc sách</label>
+                        <input type="checkbox" name="checkbox" onclick="removeHobbies()"><label>Du lịch</label>
+                        <input type="checkbox" name="checkbox" onclick="removeHobbies()"><label>Âm nhạc</label>
+                        <input type="checkbox" name="checkbox" onclick="removeHobbies()"><label>Ẩm thực</label>
+                        <input type="checkbox" name="checkbox" onclick="removeHobbies()"><label>Khác</label>
+                        <span class="error" id="error-checkbox"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <legend>Quốc tịch</legend>
+                    <select class="select" name="select" id="nation" onclick="removeNation()">
+                        <option value="" selected disabled>Chọn quốc gia</option>
+                        <option value="1">Việt Nam</option>
+                        <option value="2">Japan</option>
+                        <option value="3">China</option>
+                        <option value="4">Korea</option>
+                    </select>
+                    <span class="error" id="error-nation"></span>
+                </div>
+                <div class="form-group">
+                    <legend>Ghi chú</legend>
+                    <textarea class="note" id="note" rows="5" onclick="removeNote()"></textarea>
+                    <span class="error" id="error-note"></span>
+                </div>
+                <div class="but">
+                    <button class="btn">Đăng ký</button>
+                    <button type="reset" class="btn" onclick="removeAll()">Nhập lại</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer"><span> Trương Công Nghĩa - PD05529</span></div>
+
+    <script src="js/register.js">
+
+    </script>
+</body>
+
+</html>
